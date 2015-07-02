@@ -1,3 +1,5 @@
-＃ Painter
+# Changes
 
-Sass mixin helper
+## 0.1.0
+
+### Features
