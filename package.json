@@ -1,0 +1,29 @@
+{
+  "name": "painter",
+  "version": "0.1.0",
+  "description": "Sass mixin helper",
+  "homepage": "https://github.com/ourai/painter",
+  "keywords": [
+    "css",
+    "sass",
+    "compass",
+    "mixin",
+    "helper"
+  ],
+  "author": "Ourai Lin <ourairyu@hotmail.com> (http://ourai.ws/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ourai/painter.git"
+  },
+  "bugs": "https://github.com/ourai/painter/issues",
+  "engines": "node >= 0.8.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.0"
+  }
+}
