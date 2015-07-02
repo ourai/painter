@@ -1,11 +1,10 @@
 {
   "name": "painter",
   "version": "0.1.0",
-  "main": "dest/_painter.scss",
+  "main": "dist/_painter.scss",
   "license": "MIT",
   "ignore": [
-    "**/*",
-    "!dest/**/*"
+    "**/*"
   ],
   "keywords": [
     "css",
