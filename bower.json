@@ -1,10 +1,16 @@
 {
   "name": "painter",
   "version": "0.1.0",
-  "main": "dist/_painter.scss",
+  "main": "_painter.scss",
   "license": "MIT",
   "ignore": [
-    "**/*"
+    "**/.*",
+    "node_modules",
+    "build",
+    "src",
+    "*.json",
+    "*.md",
+    "*.coffee"
   ],
   "keywords": [
     "css",

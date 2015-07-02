@@ -13,7 +13,7 @@ module.exports = ( grunt ) ->
     concat:
       main:
         files:
-          "dist/_<%= pkg.name %>.scss": [
+          "_<%= pkg.name %>.scss": [
               # Bridge
               "build/_bridge.scss"
               # Core variables, functions
