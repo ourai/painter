@@ -165,12 +165,13 @@ $UN-wavy-low_line: "\FE4F" !default;
 }
 
 // Covered Background Image
-@mixin covered_background {
-  background: {
-    repeat: no-repeat;
-    position: 50% 50%;
-    size: cover;
+@mixin covered_background( $url: none, $color: transparent ) {
+  @if $url != none {
+    $url: image-url($url);
   }
+
+  background: $color $url no-repeat 50% 50%;
+  background-size: cover;
 }
 
 @mixin unstyled_list {
