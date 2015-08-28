@@ -30,14 +30,23 @@
   @include experimental(user-select, $args);
 }
 
+
+
+// CSS Properties
+
 @mixin image-set( $args... ) {
   background-image: -webkit-image-set($args);
   background-image: image-set($args);
 }
 
+@mixin rotate( $deg: 0deg ) {
+  filter:progid:DXImageTransform.Microsoft.Matrix(M11=cos($deg),M12=-sin($deg),M21=sin($deg),M22=cos($deg),SizingMethod="auto expand");
+  @include transform(rotate($deg));
+}
 
 
-// Enhancement
+
+// CSS3 Enhancement
 
 @mixin linear-gradient( $from, $to ) {
   @include filter-gradient($from, $to);
