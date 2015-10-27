@@ -5,6 +5,8 @@ module.exports = ( grunt ) ->
     version: pkg.version
   npmTasks = [
       "grunt-contrib-concat"
+      "grunt-contrib-compass"
+      "grunt-contrib-watch"
     ]
 
   grunt.initConfig
@@ -32,10 +34,27 @@ module.exports = ( grunt ) ->
               "src/mixins/_typography.scss"
               "src/mixins/_utilities.scss"
             ]
+    compass:
+      options:
+        outputStyle: "expanded"
+        noLineComments: true
+      test:
+        options:
+          sassDir: "test"
+          cssDir: "test"
+    watch:
+      compile:
+        files: "src/**/*.scss",
+        tasks: ["concat:main"]
+      test:
+        files: "test/**/*.scss",
+        tasks: ["compass:test"]
 
   grunt.loadNpmTasks task for task in npmTasks
 
   # Default task
   grunt.registerTask "default", [
       "concat:main"
+      "compass:test"
+      "watch"
     ]

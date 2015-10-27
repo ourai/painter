@@ -1,0 +1,25 @@
+@import "../compass-kit";
+
+@include keyframes(test_anime) {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100px;
+  }
+}
+
+body {
+  @include animation(test_anime 5s infinite);
+
+  @include user-select(none);
+
+  @include opacity(.5);
+
+  @include rotate;
+
+  @include image-set(
+      url("a.png") 1x,
+      url("b.png") 2x
+    );
+}
