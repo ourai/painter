@@ -1,3 +1,12 @@
+/*!
+ * Painter (v0.1.0) - Sass mixin helper
+ * https://github.com/ourai/painter
+ *
+ * Copyright 2015, 2015 Ourai Lin (http://ourai.ws/)
+ *
+ * Date: 2015-10-14
+ */
+
 @import "compass";
 
 // Unicode
@@ -8,7 +17,7 @@ $UN-middle_dot: "\00B7" !default;
 $UN-wavy-overline: "\FE4B" !default;
 $UN-wavy-low_line: "\FE4F" !default;
 
-// CSS3
+// CSS Properties
 
 @mixin keyframes( $name ) {
   @-webkit-keyframes #{$name} {
@@ -40,19 +49,21 @@ $UN-wavy-low_line: "\FE4F" !default;
   @include experimental(user-select, $args);
 }
 
-@mixin image-set( $args... ) {
-  background-image: -webkit-image-set($args);
-  background-image: image-set($args);
+@mixin opacity( $opacity ) {
+  opacity: $opacity;
+}
+
+@mixin grayscale( $percent: 100% ) {
+  filter: grayscale($percent);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0' /></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale($percent);
+  -ms-filter: grayscale($percent);
 }
 
 
 
-// Enhancement
-
-@mixin linear-gradient( $from, $to ) {
-  @include filter-gradient($from, $to);
-  @include background-image(linear-gradient($from, $to));
-}
+// CSS3 Enhancement
 
 @mixin supports( $prop_name, $prop_val ) {
   @supports ($prop_name: $prop_val) or
@@ -64,12 +75,19 @@ $UN-wavy-low_line: "\FE4F" !default;
   }
 }
 
+@mixin image-set( $args... ) {
+  background-image: -webkit-image-set($args);
+  background-image: image-set($args);
+}
 
+@mixin rotate( $deg: 0deg ) {
+  filter:progid:DXImageTransform.Microsoft.Matrix(M11=cos($deg),M12=-sin($deg),M21=sin($deg),M22=cos($deg),SizingMethod="auto expand");
+  @include transform(rotate($deg));
+}
 
-// Overwrite
-
-@mixin opacity( $opacity ) {
-  opacity: $opacity;
+@mixin linear-gradient( $from, $to ) {
+  @include filter-gradient($from, $to);
+  @include background-image(linear-gradient($from, $to));
 }
 
 @mixin text-ellipsis {
@@ -165,12 +183,13 @@ $UN-wavy-low_line: "\FE4F" !default;
 }
 
 // Covered Background Image
-@mixin covered_background {
-  background: {
-    repeat: no-repeat;
-    position: 50% 50%;
-    size: cover;
+@mixin covered_background( $url: none, $color: transparent ) {
+  @if $url != none {
+    $url: image-url($url);
   }
+
+  background: $color $url no-repeat 50% 50%;
+  background-size: cover;
 }
 
 @mixin unstyled_list {
