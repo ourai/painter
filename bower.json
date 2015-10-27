@@ -1,7 +1,7 @@
 {
-  "name": "painter",
-  "version": "0.2.0",
-  "main": "_painter.scss",
+  "name": "compass-kit",
+  "version": "0.3.0",
+  "main": "_compass-kit.scss",
   "license": "MIT",
   "ignore": [
     "**/.*",

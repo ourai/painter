@@ -1,8 +1,8 @@
 {
-  "name": "painter",
-  "version": "0.2.0",
-  "description": "Sass mixin helper",
-  "homepage": "https://github.com/ourai/painter",
+  "name": "compass-kit",
+  "version": "0.3.0",
+  "description": "Helper kit for Compass",
+  "homepage": "https://github.com/ourai/compass-kit",
   "keywords": [
     "css",
     "sass",
@@ -13,14 +13,14 @@
   "author": "Ourai Lin <ourairyu@hotmail.com> (http://ourai.ws/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ourai/painter.git"
+    "url": "https://github.com/ourai/compass-kit.git"
   },
-  "bugs": "https://github.com/ourai/painter/issues",
+  "bugs": "https://github.com/ourai/compass-kit/issues",
   "engines": "node >= 0.8.0",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-sass": "~0.7.3",
-    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-compass": "~1.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-clean": "~0.5.0",
