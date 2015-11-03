@@ -40,19 +40,6 @@
   }
 }
 
-// refer to http://nicolasgallagher.com/micro-clearfix-hack/
-@mixin clearfix {
-  &:before,
-  &:after {
-    content: $UN-space;
-    display: table;
-  }
-
-  &:after {
-    clear: both;
-  }
-}
-
 // Covered Background Image
 @mixin covered_background( $url: none, $color: transparent ) {
   @if $url != none {

@@ -13,3 +13,16 @@
   @include text-shadow(none);
 }
 
+// Use pie-clearfix() instead
+// refer to http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: $UN-space;
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
