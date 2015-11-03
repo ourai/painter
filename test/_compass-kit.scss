@@ -4,7 +4,7 @@
  *
  * Copyright 2015, 2015 Ourai Lin (http://ourai.ws/)
  *
- * Date: 2015-11-03
+ * Date: 2015-10-27
  */
 
 @import "compass";
@@ -54,6 +54,19 @@ $UN-wavy-low_line: "\FE4F" !default;
 @mixin linear-gradient( $from, $to ) {
   @include filter-gradient($from, $to);
   @include background-image(linear-gradient($from, $to));
+}
+
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin text-hide {
+  color: transparent;
+  border: 0 none;
+  font: 0px/0 a;
+  @include text-shadow(none);
 }
 
 // Makes text's vertical alignment middle,
