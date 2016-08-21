@@ -1,16 +1,3 @@
-@mixin text-ellipsis {
-  white-space: nowrap;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-}
-
-@mixin text-hide {
-  color: transparent;
-  border: 0 none;
-  font: 0px/0 a;
-  @include text-shadow(none);
-}
-
 // Makes text's vertical alignment middle,
 // should invoked on parent node.
 @mixin text-middle( $target: "" ) {
