@@ -26,7 +26,7 @@ module.exports = ( grunt ) ->
         files:
           "_<%= pkg.name %>.scss": [
               # Bridge
-              "build/_bridge.scss"
+              # "build/_bridge.scss"
               # Core variables, functions
               "src/_variables.scss"
               # Mixins
@@ -55,6 +55,6 @@ module.exports = ( grunt ) ->
   # Default task
   grunt.registerTask "default", [
       "concat:main"
-      "compass:test"
+      # "compass:test"
       "watch"
     ]
