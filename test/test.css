@@ -1,10 +1,10 @@
 /*!
- * Compass-kit (v0.3.0) - Helper kit for Compass
- * https://github.com/ourai/compass-kit
+ * Trick (v0.4.0) - Helper kit for Compass
+ * https://github.com/ourai/trick
  *
- * Copyright 2015, 2015 Ourai Lin (http://ourai.ws/)
+ * Copyright 2015, 2016 Ourai Lin (http://ourai.ws/)
  *
- * Date: 2015-11-03
+ * Date: 2016-10-25
  */
 @-moz-keyframes test_anime {
   from {
@@ -22,6 +22,22 @@
     top: 100px;
   }
 }
+@-o-keyframes test_anime {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100px;
+  }
+}
+@-ms-keyframes test_anime {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100px;
+  }
+}
 @keyframes test_anime {
   from {
     top: 0;
@@ -31,19 +47,22 @@
   }
 }
 body {
-  -moz-animation: test_anime 5s infinite;
   -webkit-animation: test_anime 5s infinite;
+  -moz-animation: test_anime 5s infinite;
+  -ms-animation: test_anime 5s infinite;
+  -o-animation: test_anime 5s infinite;
   animation: test_anime 5s infinite;
-  -moz-user-select: -moz-none;
-  -ms-user-select: none;
   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   filter: progid:DXImageTransform.Microsoft.Matrix(M11=cos($deg),M12=-sin($deg),M21=sin($deg),M22=cos($deg),SizingMethod="auto expand");
+  -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
   transform: rotate(0deg);
   background-image: -webkit-image-set(url("a.png") 1x, url("b.png") 2x);
   background-image: image-set(url("a.png") 1x, url("b.png") 2x);

@@ -1,10 +1,10 @@
 /*!
- * Compass-kit (v0.3.0) - Helper kit for Compass
- * https://github.com/ourai/compass-kit
+ * Trick (v0.3.0) - Helper kit for Compass
+ * https://github.com/ourai/trick
  *
- * Copyright 2015, 2015 Ourai Lin (http://ourai.ws/)
+ * Copyright 2015, 2016 Ourai Lin (http://ourai.ws/)
  *
- * Date: 2015-10-27
+ * Date: 2016-10-25
  */
 
 @import "compass";
@@ -54,19 +54,6 @@ $UN-wavy-low_line: "\FE4F" !default;
 @mixin linear-gradient( $from, $to ) {
   @include filter-gradient($from, $to);
   @include background-image(linear-gradient($from, $to));
-}
-
-@mixin text-ellipsis {
-  white-space: nowrap;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-}
-
-@mixin text-hide {
-  color: transparent;
-  border: 0 none;
-  font: 0px/0 a;
-  @include text-shadow(none);
 }
 
 // Makes text's vertical alignment middle,
@@ -132,19 +119,6 @@ $UN-wavy-low_line: "\FE4F" !default;
     right: 0;
     bottom: 0;
     left: 0;
-  }
-}
-
-// refer to http://nicolasgallagher.com/micro-clearfix-hack/
-@mixin clearfix {
-  &:before,
-  &:after {
-    content: $UN-space;
-    display: table;
-  }
-
-  &:after {
-    clear: both;
   }
 }
 

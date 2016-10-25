@@ -1,13 +1,15 @@
 /*!
- * Compass-kit (v0.3.0) - Helper kit for Compass
- * https://github.com/ourai/compass-kit
+ * Trick (v0.4.0) - Helper kit for Compass
+ * https://github.com/ourai/trick
  *
- * Copyright 2015, 2015 Ourai Lin (http://ourai.ws/)
+ * Copyright 2015, 2016 Ourai Lin (http://ourai.ws/)
  *
- * Date: 2015-11-03
+ * Date: 2016-10-25
  */
 
-@import "compass";
+@import "./bower_components/compass-mixins-0.12.10/lib/compass";
+@import "./bower_components/compass-mixins-0.12.10/lib/compass/layout";
+@import "./bower_components/compass-mixins-0.12.10/lib/animation/core";
 
 // Unicode
 
