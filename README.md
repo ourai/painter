@@ -14,7 +14,7 @@ Trick depends on the mixins part of Compass, so you need to import Compass or th
 
 ```scss
 // Import the Ruby version Compass directly
-import "compass";
+@import "compass";
 
 // or import only the mixins part
 @import "../bower_components/compass-mixins-0.12.10/lib/compass";
