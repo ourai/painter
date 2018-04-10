@@ -5,7 +5,7 @@
     "Ourai Lin <ourairyu@gmail.com> (http://ourai.ws/)"
   ],
   "description": "Helper kit for Compass",
-  "main": "_trick.scss",
+  "main": "lib/_core.scss",
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -26,7 +26,7 @@
     "mixin",
     "helper"
   ],
-  "dependencies": {
+  "devDependencies": {
     "compass-mixins-0.12.10": "compass-mixins#0.12.10"
   }
 }

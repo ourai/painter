@@ -1,4 +1,4 @@
-*.log
+**.log
 
 .*-tmp
 .*-cache
@@ -7,8 +7,12 @@
 .idea
 .jekyll-metadata
 .tmp
+.vscode
 
 bower_components
 node_modules
 
 /test
+
+bower.json
+gulpfile.js
