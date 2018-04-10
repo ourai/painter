@@ -2,6 +2,10 @@
   "name": "trick",
   "version": "0.4.1",
   "description": "Helper kit for Compass",
+  "main": "lib/_core.scss",
+  "scripts": {
+    "test": "gulp"
+  },
   "homepage": "https://github.com/ourai/trick",
   "keywords": [
     "css",
@@ -17,12 +21,7 @@
   },
   "bugs": "https://github.com/ourai/trick/issues",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-sass": "~0.7.3",
-    "grunt-contrib-compass": "~1.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-watch": "~0.6.0"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
   }
 }
