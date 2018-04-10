@@ -5,7 +5,7 @@
     "Ourai Lin <ourairyu@gmail.com> (http://ourai.ws/)"
   ],
   "description": "Helper kit for Compass",
-  "main": "_trick.scss",
+  "main": "lib/_core.scss",
   "license": "MIT",
   "ignore": [
     "**/.*",
