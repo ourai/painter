@@ -1,8 +1,8 @@
 {
-  "name": "compass-kit",
-  "version": "0.3.0",
+  "name": "trick",
+  "version": "0.4.1",
   "description": "Helper kit for Compass",
-  "homepage": "https://github.com/ourai/compass-kit",
+  "homepage": "https://github.com/ourai/trick",
   "keywords": [
     "css",
     "sass",
@@ -10,12 +10,12 @@
     "mixin",
     "helper"
   ],
-  "author": "Ourai Lin <ourairyu@hotmail.com> (http://ourai.ws/)",
+  "author": "Ourai Lin <ourairyu@gmail.com> (http://ourai.ws/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ourai/compass-kit.git"
+    "url": "https://github.com/ourai/trick.git"
   },
-  "bugs": "https://github.com/ourai/compass-kit/issues",
+  "bugs": "https://github.com/ourai/trick/issues",
   "engines": "node >= 0.8.0",
   "devDependencies": {
     "grunt": "~0.4.1",

@@ -1,4 +1,4 @@
-/vendors
+/bower_components
 /node_modules
 /.sass-cache
 /.painter-cache

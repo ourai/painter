@@ -1,13 +1,11 @@
 /*!
- * Compass-kit (v0.3.0) - Helper kit for Compass
- * https://github.com/ourai/compass-kit
+ * Trick (v0.4.1) - Helper kit for Compass
+ * https://github.com/ourai/trick
  *
- * Copyright 2015, 2015 Ourai Lin (http://ourai.ws/)
+ * Copyright 2015, 2016 Ourai Lin (http://ourai.ws/)
  *
- * Date: 2015-11-03
+ * Date: 2016-10-26
  */
-
-@import "compass";
 
 // Unicode
 
@@ -31,15 +29,15 @@ $UN-wavy-low_line: "\FE4F" !default;
 
 // CSS3 Enhancement
 
-@mixin supports( $prop_name, $prop_val ) {
-  @supports ($prop_name: $prop_val) or
-            (-o-#{$prop_name}: $prop_val) or
-            (-ms-#{$prop_name}: $prop_val) or
-            (-moz-#{$prop_name}: $prop_val) or
-            (-webkit-#{$prop_name}: $prop_val) {
-    @content;
-  }
-}
+// @mixin supports( $prop_name, $prop_val ) {
+//   @supports ($prop_name: $prop_val) or
+//             (-o-#{$prop_name}: $prop_val) or
+//             (-ms-#{$prop_name}: $prop_val) or
+//             (-moz-#{$prop_name}: $prop_val) or
+//             (-webkit-#{$prop_name}: $prop_val) {
+//     @content;
+//   }
+// }
 
 @mixin image-set( $args... ) {
   background-image: -webkit-image-set($args);
