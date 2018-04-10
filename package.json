@@ -1,6 +1,6 @@
 {
   "name": "trick",
-  "version": "0.4.1",
+  "version": "1.0.0",
   "description": "Helper kit for Compass",
   "main": "lib/_core.scss",
   "scripts": {
